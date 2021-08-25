@@ -2,6 +2,7 @@ package com.eliseubrito.sistemacontrole.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
@@ -11,6 +12,7 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class Localidade {
     @Id
     private  long id;

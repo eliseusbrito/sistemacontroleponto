@@ -2,6 +2,7 @@ package com.eliseubrito.sistemacontrole.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
@@ -11,6 +12,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class JornadaTrabalho {
     @Id
     @GeneratedValue

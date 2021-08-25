@@ -2,6 +2,7 @@ package com.eliseubrito.sistemacontrole.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Getter
@@ -10,6 +11,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class Calendario {
     @Id
     private long id;
