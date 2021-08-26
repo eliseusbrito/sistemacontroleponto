@@ -4,6 +4,8 @@ import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -15,5 +17,8 @@ import javax.persistence.Id;
 public class Calendario {
     @Id
     private long id;
+    @ManyToOne
+    private TipoData tipoData;
     private String descricao;
+    private LocalDateTime dataEspecial;
 }
