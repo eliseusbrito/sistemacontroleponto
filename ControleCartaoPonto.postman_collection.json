@@ -1,0 +1,1400 @@
+{
+	"info": {
+		"_postman_id": "74327515-6428-452c-8436-ecb642f2c70b",
+		"name": "ControleCartaoPonto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Empresa",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/empresa",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"empresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/empresa/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"empresa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Nova Empresa\",\r\n    \"cnpj\": \"5465465\",\r\n    \"endereco\":\"Rua Bento Gonçalves\",\r\n    \"bairo\":\"Centro\",\r\n    \"cidade\":\"São Leopoldo\",\r\n    \"estado\":\"RS\",\r\n    \"telefone\":\"65465432\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/empresa",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"empresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"descricao\": \"EMpresa PUT\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/empresa",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"empresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/empresa/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"empresa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JornadaTrabalho",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/jornada",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"jornada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/jornada/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"jornada",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"CNPJ\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/jornada",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"jornada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"PJ\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/jornada",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"jornada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"descricao\": \"CNPJ\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/jornada",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"jornada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/jornada/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"jornada",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CategoriaUsuario",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/categoriaUsuario",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"categoriaUsuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/categoriaUsuario/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"categoriaUsuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Categoria Um\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/categoriaUsuario",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"categoriaUsuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"descricao\": \"Categoria Um nova\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/categoriaUsuario",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"categoriaUsuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/categoriaUsuario/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"categoriaUsuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NivelAcesso",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/nivelAcesso",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"nivelAcesso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/nivelAcesso/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"nivelAcesso",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Nivel Acesso um\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/nivelAcesso",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"nivelAcesso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"descricao\": \"Nivel Acesso Um nova\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/nivelAcesso",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"nivelAcesso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/nivelAcesso/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"nivelAcesso",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ocorrencia",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/ocorrencia",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"ocorrencia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/ocorrencia/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"ocorrencia",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Nome Ocorrencia\",\r\n    \"descricao\": \"Descrição Ocorrencia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/ocorrencia",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"ocorrencia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"descricao\": \"Nova ocorrencia\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/ocorrencia",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"ocorrencia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/ocorrencia/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"ocorrencia",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TipoData",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/tipoData",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"tipoData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/tipoData/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"tipoData",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Descrição Tipo Data Dois teste calendario\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/tipoData",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"tipoData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"descricao\": \"Nova descrição tipo data\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/tipoData",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"tipoData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/tipoData/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"tipoData",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Calendario",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/calendario",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"calendario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/calendario/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"calendario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoData\": {\r\n        \"id\": 1,\r\n        \"descricao\": \"Descrição Tipo Data Dois teste calendario\"\r\n    },\r\n    \"descricao\": \"Calendario Inicial 2\",\r\n    \"dataEspecial\":  \"2007-12-03T10:15:30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/calendario",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"calendario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoData\": {\r\n        \"id\": 2,\r\n        \"descricao\": \"Calendario Two\"\r\n    },\r\n    \"descricao\": \"Calendario Seguinte\",\r\n    \"dataEspecial\":  \"2021-09-07T10:10:35\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/calendario",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"calendario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"descricao\": \"Nova descrição tipo data\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/calendario",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"calendario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/calendario/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"calendario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Localidade",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/localidade",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"localidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/localidade/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"localidade",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nivelAcesso\": 1,\r\n    \"descricao\": \"Nova Empresa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/localidade",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"localidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"descricao\": \"EMpresa PUT\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/localidade",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"localidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/localidade/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"localidade",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/usuario",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/usuario/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoriaUsuario\": 1,\r\n    \"nome\":\"Eliseu\",\r\n    \"empresa\": 1,\r\n    \"nivelAcesso\": 1,\r\n    \"jornadaTrabalho\": 1,\r\n    \"tolerancia\": 1.5,\r\n    \"inicioJornada\": \"2021-09-07T00:08:00\",\r\n    \"finalJornada\": \"2021-09-07T00:08:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/usuario",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoriaUsuario\": {\r\n        \"id\": 1,\r\n        \"descricao\": \"Categoria Um\"\r\n        },\r\n    \"nome\":\"Eliseu\",\r\n    \"empresa\": {\r\n        \"id\": 1,\r\n        \"descricao\": \"Nova Empresa\",\r\n        \"cnpj\": \"5465465\",\r\n        \"endereco\": \"Rua Bento Gonçalves\",\r\n        \"bairo\": \"Centro\",\r\n        \"cidade\": \"São Leopoldo\",\r\n        \"estado\": \"RS\",\r\n        \"telefone\": \"65465432\"\r\n        },\r\n    \"nivelAcesso\":  {\r\n        \"id\": 1,\r\n        \"descricao\": \"Nivel Acesso um\"\r\n       },\r\n    \"jornadaTrabalho\": {\r\n        \"id\": 1,\r\n        \"descricao\": \"CNPJ\"\r\n       },\r\n    \"tolerancia\": 1.5,\r\n    \"inicioJornada\": \"2021-09-07T00:08:00\",\r\n    \"finalJornada\": \"2021-09-07T17:00:00\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/usuario",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"descricao\": \"EMpresa PUT\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/usuario",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/usuario/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimentacao",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/movimentacao",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"movimentacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/movimentacao/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"movimentacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idMovimento\": 1,\r\n    \"idUsuario\":1,\r\n    \"dataEntrada\": \"2021-09-07T00:08:00\",\r\n    \"dataSaida\": \"2021-09-07T00:17:00\",\r\n    \"periodo\": 1,\r\n    \"ocorrencia\": 1,\r\n    \"calendario\": \"T00:08:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/movimentacao",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"movimentacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idMovimento\": 1,\r\n    \"idUsuario\":1,\r\n    \"dataEntrada\": \"2021-09-07T00:08:00\",\r\n    \"dataSaida\": \"2021-09-07T00:17:00\",\r\n    \"periodo\": 1,\r\n    \"ocorrencia\": 1,\r\n    \"calendario\": \"T00:08:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/movimentacao",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"movimentacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"descricao\": \"EMpresa PUT\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/movimentacao",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"movimentacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/movimentacao/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"movimentacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BancoHoras",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/bancoHoras",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"bancoHoras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/bancoHoras/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"bancoHoras",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idBancoHoras\": 1,\r\n    \"idMovimentacao\":1,\r\n    \"idUsuario\": 1,\r\n    \"dataTrabalhada\": \"2021-09-07T00:17:00\",\r\n    \"quantidadeHoras\": 8,\r\n    \"saldoHoras\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/bancoHoras",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"bancoHoras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"descricao\": \"EMpresa PUT\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8071/bancoHoras",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"bancoHoras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8071/bancoHoras/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"bancoHoras",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Swagger",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8071/jornada",
+					"host": [
+						"localhost"
+					],
+					"port": "8071",
+					"path": [
+						"jornada"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
